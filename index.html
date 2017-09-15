@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Filippo Guarda: il sito</title>
-  <meta charset = "utf8"/>
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <meta charset="utf-8"  />
+  <meta name="viewport" content="width=device.width, initial-scale=1" />
+  <title>Filippo Guarda: the website</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://use.fontawesome.com/2cdea91890.js"></script>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+<!-- remove link colors -->
+<style type="text/css">
+a { text-decoration : none; color : #000; }
+</style>
 </head>
 <body>
-  <h1> this is my personal website! </h1>
+  <header>
+    <div id="header-inner">
+      <a href="index.html" id="logo">
+        <img src="img/Eye.png">
+      </a>
+      <nav>
+        <a href="#" id="menu-icon"></a>
+        <!--menu setup for mobile -->
+        <ul>
+          <li><a href="index.html" class="class">Home</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Others</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- header end-->
+  <section class="banner">
+    <div class="banner-inner">
+      <img src="img/linkedinpictur.jpg" />
+    </div>
+  </section>
+  <!-- end banner -->
+  <section class="one-fourth" id="terminal">
+    <td>
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square fa-stack-2x"></i>
+        <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+      </span>
+    </td>
+    <h3>Terminal</h3>
+  </section>
+  <section class="one-fourth" id="coffee">
+    <td>
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square fa-stack-2x"></i>
+        <i class="fa fa-coffee fa-stack-1x fa-inverse"></i>
+      </span>
+    </td>
+    <h3>Offer me a coffee</h3>
+  </section>
+  <!-- end two to four column section -->
+  <section id="help">
+    <h2>Vuoi contattarmi?</h2>
+  </section>
+<!-- Call to action -->
+  <section class="inner-wrapper">
+    <article id="telegram">
+      <img src="img/Telegram2.png">
+    </article>
+    <aside id="telegram">
+      <h2>Scrivimi su Telegram</h2>
+    </aside>
+  </section>
+  <section>
+    <article id="coffee">
+      <h2>Oppure puoi offrirmi un caffè</h2>
+    </article>
+    <aside>
+      <img src="img/Coffee.png">
+    </aside>
+  </section>
+<!-- end of wrappers -->
+  <section class="inner-wrapper3">
+    <section class="one-third" id="engineering">
+      <h3>Ingegneria</h3>
+      <p></p>
+    </section>
+    <section class="two-third" id="personal-project">
+      <h3>Progetti personali</h3>
+      <p></p>
+    </section>
+    <section class="third-third" id="stand up comedy">
+      <h3>Stand up Comedy</h3>
+      <p></p>
+    </section>
+  </section>
+<!-- end of third column section -->
+  <section id="made with <3">
+    <h2>Purtroppo non ho <a href="https://www.linkedin.com/in/filippo-guarda-4a53a998/">social media</a>.
+       A me piace <a href="https://github.com/FilippoGuarda">fare</a>, non seguire.</h2>
+  </section>
+  <footer class="made">Made with &hearts; in Bologna</footer>
 </body>
 </html>
