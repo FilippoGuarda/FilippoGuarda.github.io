@@ -1,6 +1,7 @@
 <style>
 @import url('https://fonts.googleapis.com/css?family=Lato');
 </style>
+
 * {
   margin: 0;
   padding: 0;
@@ -51,13 +52,19 @@ header{
 }
 #menu-icon{
   display: hidden;
-  width: 40px;
-  height: 40px;
-  background: url(img/nav.png) center;
+  width: 100%;
+  height: 75px;
+  text-align: center;
+  background: url(img/nav-2.png) no-repeat center;
 }
 a:hover#menu-icon{
-  border-radius: 4px 4px 0 0;
+  border-radius: 4px;
 }
+
+
+
+
+
 /*-- start navigation --*/
 nav{
   float: left;
@@ -71,8 +78,8 @@ nav ul li{
   text-align: center;
   font-size: 150%;
   display: inline-block;
-  padding: 10px;
-  width: 23%;
+  padding: 10px 0 10px;
+  width: 24%;
 }
 nav ul li a{
   color: #e0e0e0;
@@ -102,11 +109,9 @@ nav ul li a:hover{
 }
 .banner-inner img{
   width: 100%;
-  display: block;
   margin: 0 auto 0 auto;
 }
-.banner-inner
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 720px) {
     .banner-inner {
         display: block;
         width: 100%;
@@ -117,19 +122,22 @@ nav ul li a:hover{
 
 
 
-
+.skill{
+  display: table;
+  width: 100%;
+  height: 100%;
+}
 .one-fourth{
-  width: 25%;
+  width: 20%;
   float: left;
   text-align: center;
   color: #e0e0e0;
   background-color: #4fb3bf;
+  display: table-cell;
 }
-#python img{
-  max-width: 100px;
-  max-height: 100px;
-  padding: 13% 0 4%;
-  margin: 0 0 -21px;
+#git , #python {
+  padding: 2.55% 0 0;
+  vertical-align: bottom;
 }
 .one-fourth i{
   color: #e0e0e0;
@@ -175,8 +183,6 @@ nav ul li a:hover{
 
 
 
-
-
 .inner-wrapper3{
   background-color: #00838f;
   color: #e0e0e0;
@@ -194,12 +200,60 @@ nav ul li a:hover{
   text-align: center;
   display: table-cell;
 }
-@media only screen and (max-width: 1080px) {
-    .one-third {
-        display: block;
-        width: 100%;
-    }
+
+
+
+/*-----MEDIA------*/
+
+
+@media only screen and (max-width: 720px) {
+  h2{
+    font-size: 150%;
+  }
+  h3{
+    font-size: 125%;
+  }
+  p{
+    font-size: 120%;
+  }
+  .header{
+    position: absolute;
+  }
+  #menu-icon{
+    display: inline-block;
+    font-size: 250%;
+    color: #e0e0e0;
+  }
+  nav ul, nav:active ul{
+    display: none;
+    z-index: 1000;
+    position: static;
+    background-color: #00838f;
+    width: 100%;
+  }
+  nav:hover ul{
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding: 10px 0;
+  }
+  nav ul li{
+    display: block;
+    margin: 0 auto 0 auto;
+  }
+  .one-fourth{
+    float: left;
+    width: 100%;
+  }
+  .one-third{
+    display: block;
+    width: 100%;
+  }
 }
+
+
+
+
 
 
 
