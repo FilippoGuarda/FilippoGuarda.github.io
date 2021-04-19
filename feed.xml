@@ -1,20 +1,18 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:dc="https://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>Filippo Guarda</title>
+    <description></description>
+    <link>https://filippoguarda.github.io/</link>
+    <atom:link href="https://filippoguarda.github.io//feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <title>Make your personal website</title>
+        <description>Deploy a simple static website with github pages and jekyll</description>
+        <pubDate>Mon, 19 Apr 2021 00:00:00 +0200</pubDate>
+        <link>https://filippoguarda.github.io//posts/how-to-config-your-chalk</link>
+        <guid isPermaLink="true">https://filippoguarda.github.io//posts/how-to-config-your-chalk</guid>
       </item>
-    {% endfor %}
+    
   </channel>
 </rss>

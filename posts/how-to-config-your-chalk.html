@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Filippo Guarda | Make your personal website</title>
+  <meta name="description" content="Deploy a simple static website with github pages and jekyll">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Make your personal website">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://filippoguarda.github.io//posts/how-to-config-your-chalk">
+  <meta property="og:description" content="Deploy a simple static website with github pages and jekyll">
+  <meta property="og:site_name" content="Filippo Guarda">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://filippoguarda.github.io//posts/how-to-config-your-chalk">
+  <meta name="twitter:title" content="Make your personal website">
+  <meta name="twitter:description" content="Deploy a simple static website with github pages and jekyll">
+
+  
+    
+      <meta property="og:image" content="https://filippoguarda.github.io//assets/documentation/jekyll-a03f9e65904da030d9b595a8772eb047f4872bd31b704aa56e1be60922347b99.png">
+      <meta name="twitter:image" content="https://filippoguarda.github.io//assets/documentation/jekyll-a03f9e65904da030d9b595a8772eb047f4872bd31b704aa56e1be60922347b99.png">
+    
+  
+
+  <link href="https://filippoguarda.github.io//feed.xml" type="application/rss+xml" rel="alternate" title="Filippo Guarda Last 10 blog posts" />
+
+  
+
+  
+
+    
+      <link rel="icon" type="image/x-icon" href="/assets/favicon-light-bac444b3e648543e6bed15cb0d23bec9e603093e0d33b404f8cc2d95fe5f15c0.ico">
+      <link rel="apple-touch-icon" href="/assets/apple-touch-icon-light-87d1f2a3a19b1500e5c1626a0492025ca5f7f97d24540dc5900288e92112925a.png">
+      <link rel="stylesheet" type="text/css" title="light" id="light" href="/assets/light-bb1553a18d0f1ccfe1aabc010584c49b4277a88503216b78906ba719e30019c1.css">
+      <link rel="stylesheet" type="text/css" title="dark" id="dark" href="/assets/dark-831218bc9e41aef39ee6a0bae4501195bccafcc13101ae2b9cd20493a6ec04c0.css" disabled="true">
+    
+
+  
+
+</head>
+
+<body>
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav scrollappear">
+  <a href="/" class="header-logo" title="Filippo Guarda">Filippo Guarda</a>
+  <ul class="header-links">
+    
+      <li>
+        <a href="/about" title="About me">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-about">
+  <use href="/assets/about-ecf154b571ab8034ae00aeed91a3b7ad68db80b46d958753ad6216c919486e88.svg#icon-about" xlink:href="/assets/about-ecf154b571ab8034ae00aeed91a3b7ad68db80b46d958753ad6216c919486e88.svg#icon-about"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+    
+      <li>
+        <a href="https://github.com/FilippoGuarda" rel="noreferrer noopener" target="_blank" title="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-github">
+  <use href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github" xlink:href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+    
+    
+    
+      <li>
+        <a href="https://www.linkedin.com/in/filippo-guarda" rel="noreferrer noopener" target="_blank" title="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-linkedin">
+  <use href="/assets/linkedin-cdc5c107044324a3dfbea2e9ead15873f8dee304c37d73a046988956b706256e.svg#icon-linkedin" xlink:href="/assets/linkedin-cdc5c107044324a3dfbea2e9ead15873f8dee304c37d73a046988956b706256e.svg#icon-linkedin"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <li>
+        <a href="mailto:filippo.guarda96@gmail.com" title="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-email">
+  <use href="/assets/email-782473193bf750036fdb90e8daa075508a20509d01854c09f3237c144a3f0601.svg#icon-email" xlink:href="/assets/email-782473193bf750036fdb90e8daa075508a20509d01854c09f3237c144a3f0601.svg#icon-email"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="/feed.xml" rel="noreferrer noopener" target="_blank" title="RSS">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-rss">
+  <use href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss" xlink:href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+      <li>
+        <a onclick="toggle()" title="Toggle Theme">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-theme">
+  <use href="/assets/theme-66869e0bf8dab34bae1c86bda400327b772e0be69e8dc28d3ede896e771320ed.svg#icon-theme" xlink:href="/assets/theme-66869e0bf8dab34bae1c86bda400327b772e0be69e8dc28d3ede896e771320ed.svg#icon-theme"></use>
+</svg>
+
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+
+        <article class="article scrollappear">
+          <header class="article-header">
+            <h1>Make your personal website</h1>
+            <p>Deploy a simple static website with github pages and jekyll</p>
+            <div class="article-list-footer">
+  <span class="article-list-date">
+    April 19, 2021
+  </span>
+  <span class="article-list-divider">-</span>
+  <span class="article-list-minutes">
+    
+    
+      2 minute read
+    
+  </span>
+  <span class="article-list-divider">-</span>
+  <div class="article-list-tags">
+    
+      
+      <a href="/tag/design" title="See all posts with tag 'Design'">Design</a>
+    
+      
+      <a href="/tag/jekyll" title="See all posts with tag 'Jekyll'">Jekyll</a>
+    
+  </div>
+</div>
+          </header>
+
+          <div class="article-content">
+            <p><a href="/assets/documentation/jekyll-a03f9e65904da030d9b595a8772eb047f4872bd31b704aa56e1be60922347b99.png">
+  <img src="/assets/documentation/jekyll-a03f9e65904da030d9b595a8772eb047f4872bd31b704aa56e1be60922347b99.png" alt="jekyll logo" class="zooming" data-rjs="/assets/documentation/jekyll-a03f9e65904da030d9b595a8772eb047f4872bd31b704aa56e1be60922347b99.png" data-zooming-width="1280" data-zooming-height="640" />
+</a></p>
+
+<h1 id="how-to-do-it-and-why">How to do it (and why)</h1>
+
+<h3 id="why-even-bother">Why even bother?</h3>
+
+<p>Having an online presence is extremely important in the connected age.
+While this has become trivial thanks to social media, the capacity of deploying and managing a personal website, be it a blog or just an online resume, can make a difference in the impression that we give to other people.</p>
+
+<p>Having said so, not everyone is a full stack web developer, and even if alternatives with user friendly interfaces and workflow exist (wix and square space are just a couple of examples) those tend to be bloated and expensive solutions to a simple problem.</p>
+
+<p>In the majority of cases a static website can do the trick, especially when combined with the right add-ons.<br />
+<strong>This is where jekyll enters the picture.</strong></p>
+
+<h3 id="what-is-jekyll">What is jekyll?</h3>
+
+<p>Jekyll is a static site generator.<br />
+It takes text written in your favorite markup language and uses layouts to create a static website that is easy to tweak to your likings. In addition, there are tons of open source themes that can be picked if you want to concentrate only on the content.<br />
+For example, my blog is currently using <a href="https://github.com/nielsenramon/chalk">Chalk</a>, a beautiful and minimalistic theme made by Nielsen Ramon.</p>
+
+<h3 id="in-a-few-steps">In a few steps</h3>
+
+<p>First things first: you’ll need a github account, from there you can create a new repository that will be your starting point for deploying on github pages (you can learn everything about it <a href="https://pages.github.com/">here</a>). 
+Once you created your repository, go in the settings tab&gt; pages and select the current branch to deploy.</p>
+
+<p>Clone the repository on your machine. You’ll need to install ruby, then <a href="https://bundler.io/">bundler</a> and jekyll.<br />
+Inside your cloned directory run <code class="highlighter-rouge">$ jekyll build</code>, this build the static site that you can push to the repository. You can also <code class="highlighter-rouge">$ jekyll run</code> the website locally to preview it.</p>
+
+<p>The theme can be changed either from the settings in your repository, or modifying the <code class="highlighter-rouge">_config.yml</code> file in the directory.<br />
+While most themes are easy to install, some might not be able to be integrated with github pages out of the box.</p>
+
+<p>In that case, go to the theme repository and fork it (alternatively, you can download the <code class="highlighter-rouge">.zip</code> file and extract it in your repo directory) in these cases (as it was with chalk), you’ll need to use <code class="highlighter-rouge">$ npm run setup</code> to set up the environment, <code class="highlighter-rouge">$ npm run local</code> to preview it on your machine, and <code class="highlighter-rouge">$ npm run publish</code> to create a branch compatible with github pages.
+In this case, the process is automatic.</p>
+
+<p><strong>That’s it, you’re done!</strong></p>
+
+<p>Now you can write your content in markdown and publish it.</p>
+
+<hr />
+
+<p>I hope this very concise and quite reductive guide helped you decide if you want to invest a little time in building a static website :)</p>
+
+          </div>
+          <div class="article-share">
+            
+            
+            <a href="https://twitter.com/home?status=Make+your+personal+website%20-%20https://filippoguarda.github.io//posts/how-to-config-your-chalk" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 512 512"><path d="M492 109.5c-17.4 7.7-36 12.9-55.6 15.3 20-12 35.4-31 42.6-53.6 -18.7 11.1-39.4 19.2-61.5 23.5C399.8 75.8 374.6 64 346.8 64c-53.5 0-96.8 43.4-96.8 96.9 0 7.6 0.8 15 2.5 22.1 -80.5-4-151.9-42.6-199.6-101.3 -8.3 14.3-13.1 31-13.1 48.7 0 33.6 17.2 63.3 43.2 80.7C67 210.7 52 206.3 39 199c0 0.4 0 0.8 0 1.2 0 47 33.4 86.1 77.7 95 -8.1 2.2-16.7 3.4-25.5 3.4 -6.2 0-12.3-0.6-18.2-1.8 12.3 38.5 48.1 66.5 90.5 67.3 -33.1 26-74.9 41.5-120.3 41.5 -7.8 0-15.5-0.5-23.1-1.4C62.8 432 113.7 448 168.3 448 346.6 448 444 300.3 444 172.2c0-4.2-0.1-8.4-0.3-12.5C462.6 146 479 129 492 109.5z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://filippoguarda.github.io//posts/how-to-config-your-chalk" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 512 512"><path d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64H288z"/></svg>
+            </a>
+          </div>
+
+          
+        </article>
+        <footer class="footer scrollappear">
+  <p>
+    This blog is deployed on github pages using the 
+    <a href="https://github.com/nielsenramon/chalk" rel="noreferrer noopener" target="_blank" title="Chalk"> chalk</a> template.
+  </p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  
+
+<script src="/assets/vendor-734ddaa553ebf4e6ca703bd7c567ef4a0e43b0ba799607355e56b81e88781318.js" type="text/javascript"></script>
+
+
+  <script src="/assets/webfonts-96493456d319d1bf419afdf8701552d4d486fee6afd304897d4fd81eb4e0cc0b.js" type="text/javascript"></script>
+
+
+
+  <script src="/assets/scrollappear-e2da8ea567e418637e31266cc5302126eaa79f62a2273739086358b589a89ee6.js" type="text/javascript"></script>
+
+
+<script src="/assets/application-cfde13ac81ddaf4351b2e739603e2baf688d0fcc9aba613fe62bbb1c7b037fb9.js" type="text/javascript"></script>
+
+
+  <script src="/assets/themetoggle-df0d3d73164dc26dffbd630182ae4d0dfa7bee6b694a2b5d565d73595b582bbf.js" type="text/javascript"></script>
+
+</body>
+</html>
